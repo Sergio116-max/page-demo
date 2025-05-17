@@ -2,11 +2,121 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi Página Web</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crea tu sitio web | Inspirado en Wix</title>
+  <link rel="stylesheet" href="style.css" />
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(120deg, #0046d5, #00d4ff);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    .btn-primary {
+      margin-top: 20px;
+      padding: 15px 30px;
+      font-size: 1rem;
+      border: none;
+      background-color: white;
+      color: #0046d5;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .btn-primary:hover {
+      background-color: #e6e6e6;
+    }
+    nav {
+      background: #f8f8f8;
+      padding: 10px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    nav a {
+      text-decoration: none;
+      margin-left: 20px;
+      color: #0046d5;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+    section p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+    footer {
+      background: #0046d5;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-  <h1>¡Bienvenido a mi sitio!</h1>
-  <p>Esta es mi primera página web publicada en línea con GitHub Pages.</p>
+
+  <nav>
+    <div><strong>MiWeb</strong></div>
+    <div>
+      <a href="#features">Funciones</a>
+      <a href="#plans">Planes</a>
+      <a href="#contact">Contacto</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Crea tu sitio web profesional</h1>
+    <p>Empieza gratis. Diseña como un profesional. Sin límites.</p>
+    <button class="btn-primary">Empieza Ahora</button>
+  </header>
+
+  <section id="features">
+    <h2>Funciones destacadas</h2>
+    <p>Herramientas fáciles de usar, plantillas personalizables y tecnología profesional.</p>
+  </section>
+
+  <section id="plans">
+    <h2>Planes para todos</h2>
+    <p>Elige el plan perfecto para ti: desde personal hasta empresarial.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contáctanos</h2>
+    <p>¿Tienes dudas? Estamos aquí para ayudarte en cada paso.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 MiWeb - Sitio web inspirado en Wix
+  </footer>
+
 </body>
 </html>
