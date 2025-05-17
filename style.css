@@ -130,3 +130,15 @@ footer {
 .banner-texto p {
   font-size: 1.2rem;
 }
+
+/* Animación scroll */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
