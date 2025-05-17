@@ -97,3 +97,36 @@ footer {
   padding: 20px;
   margin-top: 40px;
 }
+/* Banner */
+.banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 300px;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.banner-texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.7);
+}
+
+.banner-texto h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.banner-texto p {
+  font-size: 1.2rem;
+}
