@@ -1,8 +1,20 @@
-// script.js
 
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("La página se ha cargado correctamente.");
-  
-  // Mostrar una alerta bienvenida (puedes quitarla si molesta)
-  alert("¡Bienvenido a nuestra página web!");
+  const elements = document.querySelectorAll(".scroll-reveal");
+
+  const revealOnScroll = () => {
+    const triggerBottom = window.innerHeight * 0.9;
+
+    elements.forEach(el => {
+      const boxTop = el.getBoundingClientRect().top;
+
+      if (boxTop < triggerBottom) {
+        el.classList.add("visible");
+      }
+    });
+  };
+
+  // Ejecutar al cargar y al hacer scroll
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll();
 });
